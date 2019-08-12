@@ -1,10 +1,12 @@
-pipeline {
-    agent { label 'jenkins-slave' }
-    stages {
-        stage('build') {
-            steps {
-                sh 'echo hello'
-            }
-        }
+Jenkinsfile (Scripted Pipeline)
+node {
+    stage('Build') {
+        echo 'Building....'
+    }
+    stage('Test') {
+        echo 'Building....'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
     }
 }
